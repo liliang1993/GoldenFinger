@@ -2,7 +2,6 @@
 html, body, ul, li, ol, dl, dd, dt, p,div, h1, h2, h3, h4, h5, h6, form, fieldset, legend, img {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 html{
     max-width: 1920px;
@@ -68,9 +67,20 @@ body {
 }
 
 a {
-    text-decoration: none;
+    text-decoration: none;   
 }
-
+.cf{
+    color:#fff;
+}
+.c6{
+    color:#666;
+}
+.ml5{
+    margin-left: 5px;
+}
+.mr5{
+    margin-right: 5px;
+}
 /*a:hover {
     color: #C81623;
 }*/
