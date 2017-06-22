@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Passport</title>
+  <link rel="stylesheet" href="./css/public.css">
+  <link rel="stylesheet"  type="text/less" href=./less/passport.less>
+  <script src='./lib/less.js'></script>
+</head>
+<body>
+      <!-- 侧栏 -->
+      <div class="w clearfix">
+          <div class='side-bar fl'>
+            <div class='contact-us'>
+              <i class='icon-phone'></i>
+              <h2>联系我们</h2>
+            </div>
+            <ul class='gf_lc clearfix'>
+              <li><a href="#">开立模拟账户</a></li>
+              <li><a href="#">开立模拟账户</a></li>
+              <li><a href="#">开立模拟账户</a></li>
+              <li><a href="#">开立模拟账户</a></li>
+              <li><a href="#">开立模拟账户</a></li>
+            </ul>
+          </div>
+          <!-- 右侧主要内容  -->
+        <div class='container'>
+            <div class="content">
+                <ul class='reg-sider fl'>
+                    <li>通过手机号码注册</li>
+                    <li class='current'>通过邮箱注册</li>
+                </ul>
+                <div class="fl email-reg-page">
+                    <ul class='header-nav clearfix'>
+                      <li class='fl'>
+                        <span class='order col-yellow'>1</span>
+                        <b class=''>验证手机号码</b>
+                        <i class='icon-success hide'></i>
+                      </li>
+                      <li class='fl'>
+                        <span class='order col-yellow'>2</span>
+                        <b>验证身份信息</b>
+                        <i class='icon-success hide'></i>
+                      </li>
+                      <li class='fl'>
+                        <span class='order col-yellow'>3</span>
+                        <b>注册成功</b>
+                        <i class='icon-success hide'></i>
+                      </li>
+                    </ul>
+                    <div class="div-form">
+                      <div class="m_reg_tab ">
+                          <table cellpadding="0" cellspacing="0">
+                              <tr>
+                                  <th>手机号码</th>
+                                  <td class="m_td_1">
+                                      <div class="tab_div"><input type="text" class="m_txt" name="tel" id="tel" data-rule-required="true" maxlength="11" /></div>
+                                  </td>
+                                  <td><span class="tab_sp">仅支持中国大陆手机号码（移动、联通、电信）注册</span></td>
+                              </tr>
+                              <tr>
+                                  <th>验证码</th>
+                                  <td class="m_td_1">
+                                      <div class="clearfix tab_div">
+                                          <input type="text" class="m_txt txt_code " name="imgCode" id="imgCode" data-rule-required="true" maxlength="6" />
+                                          <a href="javascript:void(0);" class="m_code fr"><img src="/Register/ValidateTelCode" width="100" height="40"  id="ValidateCode" name="ValidateCode" /></a>
+                                      </div>
+                                  </td>
+                                  <td><span class="tab_sp">请输入正确的图形验证码</span></td>
+                              </tr>
+                              <tr>
+                                  <th>短信验证码</th>
+                                  <td class="m_td_1">
+                                      <div class="clearfix tab_div">
+                                          <input type="text" class="m_txt txt_code fl" name="telCode" id="telCode" maxlength="6" data-rule-required="true" />
+                                          <a href="javascript:;" class="m_code tel_c fr" id="send">获取</a>
+                                      </div>
+                                  </td>
+                                  <td><span class="tab_sp">若获取不到验证码，请联系客服</span></td>
+                              </tr>
+                              <tr  style="display:;">
+                                  <th>会员编码</th>
+                                  <td class="m_td_1">
+                                      <div class="fix tab_div"><input type="text" class="m_txt" name="member_code" id="member_code" value=""/></div>
+                                  </td>
+                                  <td><span class="tab_sp">若无会员编号，则不需要填写该栏</span></td>
+                              </tr>
+                          </table>
+                          <div class='read'>
+                                <a href="javascript:void(0);" class='checkbox'></a>
+                                <span class='read_text'>我已阅读并同意</span>
+                                <a href="javascript:void(0)" target="_blank" class='book'>【客户协议书】</a>、
+                                <a href="javascript:void(0)" target="_blank" class='book'>【风险披露书】</a>
+                          </div>
+                          <div class="next_page">
+                              <input type="submit" class='m_frm_btn' value='下一页'>
+                          </div>
+                          <!-- 温馨提示 start -->
+                          <div class="m_tip">
+                              <h2 class="prompt">温馨提示：</h2>
+                              <div class="content">
+                                  <p>1. 请认真填写真实的申请信息</p>
+                                  <p>2. 我们会第一时间以邮件心事，发送模拟账户的账号和密码到您提交的邮箱内，请注意查收</p>
+                              </div>
+                          </div>
+                          <!-- 温馨提示 end  -->
+                      </div>
+                      <div class="m_reg_tab hide">
+                          <div class='m_accept_code'>验证码已经发送到您的手机，请查收验证码</div>
+                          <table cellpadding="0" cellspacing="0">
+                              <tr>
+                                  <th>验证码</th>
+                                  <td class="m_td_1">
+                                      <div class="tab_div"><input type="text" class="m_txt"  data-rule-required="true" maxlength="11" /></div>
+                                  </td>
+                                  <td><span class="tab_sp">若获取不到验证码，请联系客服</span></td>
+                              </tr>
+                              <tr>
+                                  <th>登录密码</th>
+                                  <td class="m_td_1">
+                                      <div class="fix tab_div"><input type="text" class="m_txt"  value=""/></div>
+                                  </td>
+                                  <td><span class="tab_sp">请输入6-18位的密码</span></td>
+                              </tr>
+                              <tr>
+                                  <th>登录密码</th>
+                                  <td class="m_td_1">
+                                      <div class="fix tab_div"><input type="text" class="m_txt"  value=""/></div>
+                                  </td>
+                              </tr>
+                          </table>
+                          <div class="next_page m_reg_tab_2">
+                              <input type="submit" class='m_frm_btn' value='下一页'>
+                          </div>      
+                      </div>
+                      <div class="m_reg_tab m_success_tab hide ">
+                          <span class='m_success'>
+                              恭喜阁下开户成功 !
+                          </span>
+                          <div class='m_success_prompt'>
+                            <p>交易账户已发送阁下手机， 请注意查收</p>
+                            <p>为了你的账户安全，请您登录后再进行身份认证操作</p>
+                          <div>
+                          
+                          
+                    </div>
+                </div>
+            </div>
+        </div>
+  </div>
+     
+</body>
+</html>
