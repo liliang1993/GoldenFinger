@@ -2,155 +2,8 @@
   background-image: url(../images/Home/navStar.png);
     background-repeat: no-repeat; 
 }
-.gf_header{
-    background-color:#735e49;
-    width: 100%;
-    height: 100px;
-    position:relative;
-    z-index:777;
-    >.header_warp{
-        position:relative;
-        >.header_r{
-            
-        }
-        >.header_l{
-            padding-top:29px;
-            padding-left:28px;
-             >h1{
-                  width: 212px;
-                  float: left;
-                  height: 61px;
-                  overflow: hidden;
-                >a{
-                    >img{
-                      width:200px;
-                    }
-                }  
-            }
-            >p{
-              float: left;
-              height: 53px;
-              line-height: 53px;
-              border-left:2px solid #bda86f;
-              padding-left: 14px;
-              margin-top: 6px;
-              font-size: 16px;
-              font-weight:bold;
-                >a{
-                  color: #fff;
-                  >span{
-                  }
-                }
-            }
-        }
-        >.header_r{
-              padding: 15px 30px 0 0;
-              width:486px;
-             >.header_r_one{
-                  >dl{
-                      >dt{
-                        margin:0 10px 0 20px;  
-                      }
-                      >dd{
-                            color:#fff;
-                          >a{
-                            color:#fff;
-                          }
-                          &+dd{
-                              padding-left:10px;
-                          }
-                          &+dt{
-                              padding-left:20px;
-                              border-left:1px solid;
-                          }
-                      }
-                  }
-             }
-             >.header_r_two{
-              margin-top: 20px;
-              height:20px;
-              line-height:20px;
-                  >span{
-                      margin-right:40px;
-                  }
-                  >a{
-                    position:relative;
-                    padding-left:14px;
-                    vertical-align: middle;
 
-                    >i{
-                        position: absolute;
-                        top:3px;
-                        left:0;
-                        width:10px;
-                        height:8px;
-                        background-position: 0;
 
-                    }
-
-                  }
-             }
-        }
-        >.nav{
-            position:absolute;
-            right:0;
-            top:92px;
-            height:50px;
-            width:950px;
-            padding:0 30px;
-            >ul{
-                >li{  
-                  width:auto;
-                  >a{
-                    color:#fff;
-                    display:block;
-                    padding:0 25px;
-                    height:50px;
-                    height:50px;
-                    font-size:16px;
-                    line-height:50px;
-                    text-align: center;
-                  }
-                  >.nav_list{
-                    border:1px solid #bda86f;
-                    background-color:rgba(167,150,104,0.6);
-                      >ul{
-                          >li{
-                              text-align: center;
-                              line-height:50px;
-                              height:50px;
-                              &:hover{
-                                >a{
-                                  color:#bda86f;
-                                  background-color: #fff;
-                                }
-                              }
-                              >a{
-                                 color:#fff;
-                                 display: block;
-                                 font-size:14px;
-                                 height:50px;
-
-                              }
-                          }
-                      }
-                  }
-                  &:hover{
-                      &{
-                      background-color:#fff;
-                      }
-                      >a{
-                        color:#bda86f;
-                      }
-                      >.nav_list{
-                        display: block;
-                      }
-                  }
-                }
-            }
-        }
-    }
-}
 
 .banner{
     position: relative;
@@ -264,62 +117,74 @@
             }
         }
         >.m_pt_box{
-          height: 190px;
-          /*position: relative;*/
-          overflow: hidden;
-          background-color: blue;
+            height: 220px;
+            /*position: relative;*/
+            overflow: hidden;
+            background-color: blue;
             >ul{
                 width:1100px;
                 padding:30px 0; 
                 >li{
-                  position: relative;
-                  overflow: hidden;
-                  margin-left: 20px;
-                  background-color: red;
-                  transition: all 0.5s ease-out 0s;
-                      >a{
-                        position:relative;
-                        width: 400px;
-                        display: block;
-                        float: left;
-                        left: 0;
-                        top: 0;
-                          >.m_pt_t{
-                                width: 160px;
+                    position: relative;
+                    overflow: hidden;
+                    height:160px;
+                    
+                    >.box_item{
+                        background-color: #735e49;
+                        position:absolute;
+                        top:0;
+                        width: 160px;
+                        height:160px;
+                        transition: all 0.5s ease-out 0s;
+                        &.box_front{
+                           z-index: 5;
+                           color:#bda86f;
+                            backface-visibility:hidden;
+                            -webkit-backface-visibility:hidden; /* Chrome 和 Safari */
+                            -moz-backface-visibility:hidden;  /* Firefox */
+                            -ms-backface-visibility:hidden;   /* Internet Explorer */
+                            >p{
+                               width: 100%;
+                               height: 100px;
+                               text-align: center;
+                            }
+                            >h2{
+                                  text-align: center;
+                                  font-size: 14px;
+                                  font-weight: normal;
+                                  line-height: 20px;
+                                  margin-top: 10px;
+                            }       
+                        } 
+                        &.box_back{
+                          transform:rotateY(-180deg);
+                            >a{
+                              display: block;
+                              height:160px;
+                              padding:0 25px;
                                 >p{
-                                   width: 100%;
-                                   height: 100px;
-                                   text-align: center;
-                                }
-                                >h2{
-                                      text-align: center;
-                                      font-size: 14px;
-                                      color: #696969;
-                                      font-weight: normal;
-                                      line-height: 20px;
-                                      margin-top: 10px;
-                                }       
-                            }  
-                           >.honourdetail{
-                                color: #999;
-                                display: none;
+                                margin-top: 50px;
+                                color:#bda86f;
                                 font-size: 13px;
-                                height: 100px;
-                                width: 160px;
+                                height: 110px;
                                 text-align: left;
-                                background-color: hotpink;
-                           }  
-                        }
-                        &:hover{
-                          >a{
-                            left:-160px;
-                        }       
+                                }
+                            }
+                            
+                        }   
+                    }                          
+                    &:hover{
+                      >.box_front{
+                        transform:rotateY(180deg);
+                      }
+                      >.box_back{
+                         transform:rotateY(0deg);
+                      }
                     }
                 } 
             }
         }
     }
-    
 }
 
 
@@ -374,9 +239,9 @@
     }
     >.m_prices{
         height:600px;
+        width:800px;
         >.m_prices_t{
           height: 80px;
-          margin-left:240px;
           background-color:#e5c558;
             >h2{
                 height:80px;
@@ -411,6 +276,34 @@
             }
         }
         >.m_prices_b{
+            position: relative;
+            margin:5px 20px 0;
+            width:750px; 
+            height:400px;
+            >.m_price_tab{
+                position: absolute;
+                left: 0px;
+                top: 0px;
+                width: 100%;
+                >table{
+                    >thead{
+                        >tr{
+                            >th{
+                                width:200px;
+                                font-size: 16px;
+                                color: #28282d;
+                                font-weight: normal;
+                                height: 45px;
+                                line-height: 45px;
+
+                            }
+                        }
+                    }
+                    >tbody{
+
+                    }
+                }
+            }
         }
     }
 
@@ -454,7 +347,7 @@
         }
     }
     >.m_data{
-      width: 480px;
+      width: 440px;
       padding-right: 20px;
       height:350px;
         >.m_data_title{

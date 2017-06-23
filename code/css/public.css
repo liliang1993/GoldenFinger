@@ -45,10 +45,11 @@ img {
 table {
     /*表格的单元格边框默认是不会重合的，这个属性可以让表格的边框重合在一起，看起来更加细一些*/
     border-collapse: collapse;
+    border-spacing: 0;
 }
 
 body {
-    font: 12px/150% Arial, Verdana, "\5b8b\4f53"; /*unitedCode的写法，宋体的写法*/
+    font: 12px/150% "Microsoft YaHei", Arial, Helvetica, sans-serif;; /*unitedCode的写法，宋体的写法*/
     color: #666;
     background: #fff;
 }
@@ -162,7 +163,7 @@ s, i, em {
     float: right;
     margin-bottom: 3px;
     position: relative;
-    background: #cfa759;
+    
 
 }  
 
@@ -171,10 +172,15 @@ s, i, em {
     height: 75px;
     display: block;
     text-align: center;
-    color: #fef5eb;
+    color: #fff;
     font-size: 14px;
     line-height: 24px;
     font-weight: bold;
+    background: #cfa759;
+}
+.float_r li a.float-link:hover{
+      color: #cfa759;  
+      background-color: #fff;
 }
 
 .float_r li a.float-link i {
