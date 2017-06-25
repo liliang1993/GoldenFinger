@@ -1,4 +1,4 @@
-.m_wh{
+.m_deposit{
     padding-top:93px;
     .deposit_header{
         >.header_l{
@@ -21,9 +21,29 @@
         }
     }
 
-    .wh_body{
-        >.wh_content{
-              
+    .deposit_body{
+        >.deposit_content{
+            width:900px;
+            margin:10px auto;
+            >.step{
+              border:2px solid #e1cc55;
+              margin-bottom: 20px;
+                padding:20px 0 20px 20px;
+                >.step_t{
+                  color:#e1cc55;
+                  width:580px;
+                  line-height: 20px;
+                  font-size:14px;
+                  margin-bottom: 10px;
+                }
+                &.last_step{
+                    border:0 none;
+                    margin-top: -15px;
+                    >p{
+                        
+                    }
+                }
+            }
         }
     }
 }
