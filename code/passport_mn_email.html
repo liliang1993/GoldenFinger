@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <title>Passport</title>
   <link rel="stylesheet" type="text/less" href="./less/public.less">
-  <link rel="stylesheet" type="text/less" href=./less/register.less>
+  <link rel="stylesheet" type="text/less" href=./less/mn_register.less>
   <script src='./lib/less.js'></script>
   <script src="./js/iconfont.js"></script>
 </head>
@@ -56,18 +56,18 @@
         <div class="side_content ">
           <div class='side_c_h'>
             <svg class="icon" aria-hidden="true">
-              <use xlink:href="#icon-kailizhenshiyonghu"></use>
+              <use xlink:href="#icon-monizhanghu"></use>
             </svg>
-            <h1>开立<br>真实账户</h1>
+            <h1>开立<br>模拟账户</h1>
           </div>
           <div class="side_c_b">
             <ul>
               <li>
                 <a href="#">
                   <svg class="icon icon_mn" aria-hidden="true">
-                    <use xlink:href="#icon-monizhanghu">
+                    <use xlink:href="#icon-kailizhenshiyonghu">
                     </use>
-                  </svg>开立模拟账户</a>
+                  </svg>开立真实账户</a>
               </li>
               <li>
                 <a href="#">
@@ -106,7 +106,7 @@
           </ul>
           <div class="reg_page">
             <div class="reg_content">
-              <ul class='header-nav phone_reg_h clearfix'>
+             <!--  <ul class='header-nav phone_reg_h clearfix'>
                 <li class='fl'>
                   <span class='order'>1</span> 填写信息
                   <svg class="icon" aria-hidden="true">
@@ -125,28 +125,26 @@
                     <use xlink:href="#icon-liuchenggouxuan"></use>
                   </svg>
                 </li>
-              </ul>
+              </ul> -->
               <div class="div-form">
-                <div class="m_reg_tab ">
+                <div class="m_reg_tab hide">
                   <table cellpadding="0" cellspacing="0">
                     <tr>
                       <th>真实身份</th>
                       <td class="m_td_1 pl23">
                         <div class="tab_div">
-                          <input type="text" class="m_txt"  id="tel" data-rule-required="true" maxlength="11" />
+                          <input type="text" class="m_txt" placeholder="请输入真实姓名"  id="tel" data-rule-required="true" maxlength="11" />
                         </div>
                       </td>
                       <td>
-                        <svg class="icon" aria-hidden="true">
-                          <use xlink:href="#icon-tishi"></use>
-                        </svg>
-                        <span class="tab_sp">真实姓名一经注册成功无法修改</span></td>
+                          &nbsp;
+                      </td>
                     </tr>
                      <tr>
                       <th>邮箱账号</th>
                       <td class="m_td_1 pl23">
                         <div class="tab_div">
-                          <input type="text" class="m_txt"  id="tel" data-rule-required="true" maxlength="11" />
+                          <input type="text" class="m_txt"   placeholder="请输入邮箱账号"   data-rule-required="true" maxlength="11" />
                         </div>
                       </td>
                       <td>
@@ -159,7 +157,7 @@
                       <th>验证码</th>
                       <td class="m_td_1 pl23">
                         <div class="clearfix tab_div">
-                          <input type="text" class="m_txt txt_code " name="imgCode" id="imgCode" data-rule-required="true" maxlength="6" />
+                          <input type="text" class="m_txt txt_code "  placeholder="请输入验证码"   name="imgCode" id="imgCode" data-rule-required="true" maxlength="6" />
                           <a href="javascript:void(0);" class="m_code fr"><img src="/Register/ValidateTelCode" width="100" height="40" id="ValidateCode" name="ValidateCode" /></a>
                         </div>
                       </td>
@@ -168,6 +166,23 @@
                           <use xlink:href="#icon-tishi"></use>
                         </svg>
                       <span class="tab_sp">请输入正确的图形验证码</span></td>
+                    </tr>
+                    <tr>
+                      <th>邮箱验证码</th>
+                      <td class="m_td_1 pl23">
+                        <div class="clearfix tab_div">
+                          <input type="text" class="m_txt txt_code " placeholder="请输入邮箱验证码" name="imgCode" id="imgCode" data-rule-required="true" maxlength="6" />
+                          <a href="javascript:void(0);" class="m_code tel_c fr">获取</a>
+                        </div>
+                      </td>
+                      <td>
+                      <svg class="icon" aria-hidden="true">
+                          <use xlink:href="#icon-tishi"></use>
+                        </svg>
+                        <svg class="icon" aria-hidden="true">
+                          <use xlink:href="#icon-tishi"></use>
+                        </svg>
+                      <span class="tab_sp">若获取不到验证码，请联系客服</span></td>
                     </tr>
                     <tr>
                       <th>会员编码</th>
@@ -202,57 +217,19 @@
                     </p>
                   </div>
                 </div>
-                <div class="m_reg_tab hide">
-                  <div class='m_reg_prompt'>验证码已经发送到您的注册邮箱，请<a href="javascript:void(0);">登录</a>邮箱查收验证码</div>
-                  <table cellpadding="0" cellspacing="0">
-                    <tr>
-                      <th>邮箱验证码</th>
-                      <td class="m_td_1 pl23">
-                        <div class="tab_div">
-                          <input type="text" class="m_txt" data-rule-required="true" maxlength="11" />
-                        </div>
-                      </td>
-                      <td>
-                      <svg class="icon" aria-hidden="true">
-                          <use xlink:href="#icon-tishi"></use>
-                        </svg>
-                      <span class="tab_sp">若获取不到验证码，请联系客服</span></td>
-                    </tr>
-                    <tr>
-                      <th>登录密码</th>
-                      <td class="m_td_1 pl23">
-                        <div class="fix tab_div">
-                          <input type="text" class="m_txt" value="" />
-                        </div>
-                      </td>
-                      <td>
-                      <svg class="icon" aria-hidden="true">
-                          <use xlink:href="#icon-tishi"></use>
-                        </svg>
-                      <span class="tab_sp">请输入6-18位的密码</span></td>
-                    </tr>
-                    <tr>
-                      <th>再次确认</th>
-                      <td class="m_td_1 pl23">
-                        <div class="fix tab_div">
-                          <input type="text" class="m_txt" value="" />
-                        </div>
-                      </td>
-                    </tr>
-                  </table>
-                  <div class="m_reg_btn">
-                        <a href="">下一页</a>
-                  </div>
-                </div>
-                <div class="m_reg_tab hide">
+                <div class="m_reg_tab">
                   <div class='m_success_wrap'>
                     <div class="m_success_c">
                       <svg class="icon" aria-hidden="true">
                         <use xlink:href="#icon-zhucechenggongwancheng"></use>
                       </svg>
                       <h2>恭喜阁下开户成功</h2>
-                      <p>交易账户已发送到阁下邮箱，请注意查收</p>
-                      <p>为了您的账户安全，请您登录后进行身份认证操作</p>
+                      <p>您的模拟账号及密码已经发送注册的邮箱，请注意查收。</p>
+                      <p><a href="" class="col-bda86f">下载MT4交易软件</a>，即可登录模拟账户进行模拟交易。</p>
+                    </div>
+                    <div class="m_success_prompt">
+                      <em>温馨提示：</em>
+                      <span>请保管好账号密码，切勿透露他人</span>
                     </div>
                   </div>
                 </div>

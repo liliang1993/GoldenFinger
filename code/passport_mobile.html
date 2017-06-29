@@ -101,20 +101,20 @@
       <div class='container'>
         <div class="content">
           <ul class='reg-sider fl'>
-            <li >通过手机号码注册</li>
-            <li class='current'>通过邮箱注册</li>
+            <li class='current'>通过手机号码注册</li>
+            <li >通过邮箱注册</li>
           </ul>
           <div class="reg_page">
             <div class="reg_content">
               <ul class='header-nav phone_reg_h clearfix'>
                 <li class='fl'>
-                  <span class='order'>1</span> 填写信息
+                  <span class='order'>1</span> 验证手机号码
                   <svg class="icon" aria-hidden="true">
                     <use xlink:href="#icon-liuchenggouxuan"></use>
                   </svg>
                 </li>
                 <li class='fl'>
-                  <span class='order'>2</span> 验证邮箱
+                  <span class='order'>2</span> 验证身份信息
                   <svg class="icon" aria-hidden="true">
                     <use xlink:href="#icon-liuchenggouxuan"></use>
                   </svg>
@@ -130,30 +130,17 @@
                 <div class="m_reg_tab ">
                   <table cellpadding="0" cellspacing="0">
                     <tr>
-                      <th>真实身份</th>
+                      <th>手机号码</th>
                       <td class="m_td_1 pl23">
                         <div class="tab_div">
-                          <input type="text" class="m_txt"  id="tel" data-rule-required="true" maxlength="11" />
+                          <input type="text" class="m_txt" name="tel" id="tel" data-rule-required="true" maxlength="11" />
                         </div>
                       </td>
                       <td>
                         <svg class="icon" aria-hidden="true">
                           <use xlink:href="#icon-tishi"></use>
                         </svg>
-                        <span class="tab_sp">真实姓名一经注册成功无法修改</span></td>
-                    </tr>
-                     <tr>
-                      <th>邮箱账号</th>
-                      <td class="m_td_1 pl23">
-                        <div class="tab_div">
-                          <input type="text" class="m_txt"  id="tel" data-rule-required="true" maxlength="11" />
-                        </div>
-                      </td>
-                      <td>
-                        <svg class="icon" aria-hidden="true">
-                          <use xlink:href="#icon-tishi"></use>
-                        </svg>
-                        <span class="tab_sp">请输入邮箱账号</span></td>
+                        <span class="tab_sp">仅支持中国大陆手机（移动、联通、电信）注册</span></td>
                     </tr>
                     <tr>
                       <th>验证码</th>
@@ -168,6 +155,23 @@
                           <use xlink:href="#icon-tishi"></use>
                         </svg>
                       <span class="tab_sp">请输入正确的图形验证码</span></td>
+                    </tr>
+                    <tr>
+                      <th>短信验证码</th>
+                      <td class="m_td_1 pl23">
+                        <div class="clearfix tab_div">
+                          <input type="text" class="m_txt txt_code " name="imgCode" id="imgCode" data-rule-required="true" maxlength="6" />
+                          <a href="javascript:void(0);" class="m_code tel_c fr">获取</a>
+                        </div>
+                      </td>
+                      <td>
+                      <svg class="icon" aria-hidden="true">
+                          <use xlink:href="#icon-tishi"></use>
+                        </svg>
+                        <svg class="icon" aria-hidden="true">
+                          <use xlink:href="#icon-tishi"></use>
+                        </svg>
+                      <span class="tab_sp">若获取不到验证码，请联系客服</span></td>
                     </tr>
                     <tr>
                       <th>会员编码</th>
@@ -203,10 +207,10 @@
                   </div>
                 </div>
                 <div class="m_reg_tab hide">
-                  <div class='m_reg_prompt'>验证码已经发送到您的注册邮箱，请<a href="javascript:void(0);">登录</a>邮箱查收验证码</div>
+                  <div class='m_reg_prompt'>为了您的账户安全，请填写您本人的真实信息</div>
                   <table cellpadding="0" cellspacing="0">
                     <tr>
-                      <th>邮箱验证码</th>
+                      <th>真实姓名</th>
                       <td class="m_td_1 pl23">
                         <div class="tab_div">
                           <input type="text" class="m_txt" data-rule-required="true" maxlength="11" />
@@ -216,7 +220,7 @@
                       <svg class="icon" aria-hidden="true">
                           <use xlink:href="#icon-tishi"></use>
                         </svg>
-                      <span class="tab_sp">若获取不到验证码，请联系客服</span></td>
+                      <span class="tab_sp">真实姓名一经注册成功，将无法修改</span></td>
                     </tr>
                     <tr>
                       <th>登录密码</th>
