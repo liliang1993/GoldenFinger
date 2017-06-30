@@ -88,9 +88,9 @@
                       >.user_kl{
                           display: block;
                           height:100px;
-                          width: 64px;
+                          width: 130px;
                           text-align: center;
-                          padding:15px 33px 0;
+                          padding:15px 0 0;
                           
                           >svg{
                             color:#fff;
@@ -199,6 +199,8 @@
                                 bottom:0;
                                 top:164px;
                                 background-color:#e2b454;
+                                 -webkit-transition:all 0.5s;
+                                 -o-transition:all 0.5s;
                                  transition:all 0.5s;
                                   >.box_text{
                                       padding-left: 36px;
@@ -391,19 +393,34 @@
                   >ul{
                       >li{
                         width:290px;
-                          padding:0 10px;
-                          >.news_menu_t{
-                             margin-top: 7px;
-                            font-size: 16px;
-                            line-height: 36px;
-                            height:36px;
+                        padding:0 10px;
+                        >.news_menu_t{
+                            margin-top: 7px;                      
+                            >a{
+                              display: block;
+                              font-size: 16px;
+                              line-height: 36px;
+                              height:36px;
+                              color:#735e49;
+                              &:hover{
+                                color:#bda86f;
+                              }
+                            }
                           }
-                          >a{
+                        
+                          >.news_menu_summary{
                             display: block;
-                              >.summary{
-                                   margin-top:9px;
+                            color:#969696;
+                            width:290px;
+                            margin-top:9px;
+                              >span{     
+                                    display: block;    
+                                    text-align: justify;                         
                                    font-size:12px;
                                    line-height:22px;
+                              }
+                              &:hover{
+                                  color:#bda86f;
                               }
                           }
                           >.list_menu_b{
@@ -485,17 +502,29 @@
               >.m_jys_h{
                   padding:13px 55px 0;
                   height:205px;
-                  color:#fff;
                   text-align: center; 
                   >h2{
-                    height:76px;
-                    line-height:76px;
-                    font-size: 34px;
+                    >a{
+                      display: block;
+                      height:76px;
+                      line-height:76px;
+                      font-size: 34px;
+                      color:#fff;
+                      &:hover{
+                          color:#c2af7a;
+                      }
+                    }
                     
                   }
                   >p{
-                    line-height: 22px;
-                    font-size: 12px;
+                    >a{
+                      line-height: 22px;
+                      font-size: 12px;
+                      color:#fff;
+                      &:hover{
+                          color:#c2af7a;
+                      }
+                    }
                   }
               }
               >.n_jsy_b{
@@ -583,9 +612,17 @@
               >.m_fx_b{
                   height:125px;
                   padding:19px 55px 0;
-                  >.m_fx_b_c{    
+                  >.m_fx_b_c{ 
+                    >a{   
+                      display: block;
                       line-height: 20px;
                       font-size: 12px;
+                      color:#969696;
+                      text-align: justify;
+                      &:hover{
+                        color:#c2af7a;
+                      }
+                    }
                   }
                   >.m_fx_b_b{
                     margin-top: 6px;
@@ -593,7 +630,11 @@
                       >.m_fx_b_more{
                         height:40px;
                         line-height: 40px;
-                        text-decoration:underline;
+                        color:#969696;
+                        &:hover{
+                          color:#c2af7a;
+                          text-decoration: underline;
+                        }
                       }
                   }
               }
@@ -619,24 +660,37 @@
                             }
                       >li{
                         width:237px;
-                        height: 295px;   
+                        height: 295px;                                 
+                        >.m_dt_item_t{
+                          margin-bottom:8px;
                           >a{
-                              color:#fff;
-                              display: block;
-                              >.m_dt_item_t{
-                                  font-size: 16px;
-                                  line-height: 20px;
-                                  margin-bottom:8px;
-                              }
-                              >img{
-
-                              }
+                            display: block;
+                            color:#fff;
+                            font-size: 16px;
+                            line-height: 20px;
+                            color:#fff;
+                            &:hover{
+                              color:#c2af7a;
+                            }
                           }
-                          >.m_dt_item_c{
-                              margin-top:8px;
-                              color: #fff;
-                              line-height:14px;
-                          }
+                        }
+                        >.m_dt_item_img{
+                            >a{
+                                display: block;
+                            }
+                        }
+                        >.m_dt_item_c{
+                            margin-top:8px;                         
+                            >a{ 
+                                display: block;
+                                line-height:14px;
+                                color:#fff;
+                                text-align: justify;
+                                &:hover{
+                                  color:#c2af7a;
+                                }
+                            }
+                        }
                           >.m_dt_item_b{             
                               line-height: 36px;
                               >.m_dt_item_time{
@@ -671,6 +725,7 @@
                 >h2{
                     font-size: 14px;
                     color:#735e49;
+                    font-weight: bold;
                     line-height: 38px;
                 }
                 >ul{
@@ -681,6 +736,9 @@
                           color: #fff;
                           height:24px;
                           line-height: 24px;
+                          &:hover{
+                            color:#735e49;
+                          }
                         }
                     }
                 }
