@@ -1,138 +1,232 @@
-.w{
-    .side-bar{
-        width: 250px;
-        height:700px;
-        background-color:red;
-        position:relative;
-        .contact-us{
-            position:absolute;
-            top:20px;
-            left:15px;
-            background: #bda86f;
-            height:150px;
-            width: 200px;
-            h2{ 
-                margin-top:100px;
-                margin-left:10px;
-                color: #fff;
-                font-size: 30px;
-            }
-        }
-        .gf_lc{
-            position:absolute;
-            top:200px;
-            left:15px;
-            li{
-                width: 150px;
-                margin-bottom:20px;
-                a{
-                    display: block;
-                    height: 30px;
-                    line-height: 30px;
-                    text-align: center;
-                    border: 1px solid #bb9650;
-                    background: #cfa759;
-                    color: #fff;
-                    font-size: 14px;
-                }
-            }
-        }
-    }
-    .container{
-            margin-left:250px;
-            >.main{
-                margin:50px 0 0 30px;
-                width:700px;
-                height:700px;
-                >p{
-                    height: 40px;
-                    letter-spacing:2px;
-                    margin-bottom:10px;
-                    color: #bda86f;      
-                }
-                >span{
-                    font-size:10px;
-                }
-                >.personal-info{
-                    margin-top: 30px;
-                    ul{   
-                        >li{
-                            width:350px;
-                            margin-bottom:10px;    
-                            >input{
-                                padding:0px 0 0 10px;
-                                height:35px;
-                                width:340px;
-                                &::-webkit-input-placeholder{
-                                    color:#fff;
-                                    font-size:14px;
-                                    font-weight: bold;
-                                }
-                                &::-moz-placeholder{
-                                    color:#fff;
-                                    font-size:14px;
-                                    font-weight: bold;
-                                }
-                                &.ver-code{
-                                    width:230px;
-                                   vertical-align: middle;
-                                }
-                            }
-                            >.m_code{
-                                display: block;
-                               /* vertical-align:middle;*/
-                                
-                            }
-                            >.submit{
-                                width:100px;
-                                font-size:14px;
-                                font-weight:bold;
-                                color:#fff;
-                                background-color: #e4c457;
-                            }
-                            >textarea{
-                                padding:10px 0 0 9px;
-                                height:65px;
-                                width:340px;
-                                border:0;
-                                outline:0;
-                                &::-webkit-input-placeholder{
-                                    color:#fff;
-                                    font-size:14px;
-                                    font-weight: bold;
-                                }
-                                &::-moz-placeholder{
-                                    color:#fff;
-                                    font-size:14px;
-                                    font-weight: bold;
-                                }
-                            } 
 
-                        } 
-                    }
-                    >.left-form{
-                        width:320px;
-                    }
-                    >.right-form{
-                        width:320px;
-                        >.m_info{
-                            margin-top:20px; 
-                            >h2{
-                                font-size: 14px;
-                                font-weight: bold;
-                            }
-                            >.m_detail{
-                                margin-top:15px;
-                                >p{
-                                    line-height: 30px;
-                                    font-size:12px;
+.contact_content{
+    width: 100%;
+    height: 810px;
+    margin-bottom: 50px;
+    min-width: 1200px;
+    padding-top: 200px;
+    >.contact_wrap{
+        height:810px;
+        >.side-bar {
+            width: 250px;
+            height: 810px;
+            background: url(../images/Contact/sideImg.png) no-repeat center;
+            position: relative;
+            >.side_content {
+                padding-top: 24px;
+                >.side_c_h {
+                      background-color: #bda86f;
+                      height: 80px;
+                      width: 198px;
+                      margin: 0 auto;
+                      padding-top: 75px;
+                      padding-left: 22px;
+                      position: relative;
+                      
+                      >h1 {
+                         height:80px;
+                        color: #fff;
+                        font-size: 46px;
+                        line-height: 80px;
+                        position:relative;
+                        >svg {
+                            position: absolute;
+                            height: 50px;
+                            width: 50px;
+                            top: -50px;
+                            left:0;
+                            font-size: 50px;
+                            color: #fff;
+                        }
+                       
+                      }
+                }
+                >.side_c_b {
+                  padding-top: 40px;
+                  padding-left: 18px;
+                  >ul {
+                        >li {
+                            width: 170px;
+                            height: 40px;
+                            margin-bottom: 15px;
+                            background-color: #bda86f;
+                            >a {
+                                display: block;
+                                position: relative;
+                                height: 40px;
+                                line-height: 40px;
+                                color: #fff;
+                                font-size: 16px;
+                                padding-left: 48px;
+                                >svg {
+                                      position: absolute;
+                                      &.icon_mn {
+                                        top: 9px;
+                                        left: 18px;
+                                        font-size: 24px;
+                                      }
+                                      &.icon_download {
+                                        left: 18px;
+                                        top: 8px;
+                                        font-size: 24px;
+                                      }
+                                      &.icon_guide {
+                                        left: 20px;
+                                        top: 9px;
+                                        font-size: 22px;
+                                      }
+                                      &.icon_center {
+                                        left: 20px;
+                                        top: 9px;
+                                        font-size: 20px;
+                                      }
                                 }
                             }
                         }
                     }
                 }
-                
             }
+        }  
+        >.r_page{
+            width: 830px;
+            height: 778px;
+            background-color:#735e4b;
+            padding-top: 32px;
+            color: #fff;
+            >.page_content{
+                width: 730px;
+                margin:0 auto;
+                height:778px;   
+                /*background-color: red;  */
+                >.content_h{
+                    height: 88px;
+                   >p{
+                        font-size: 14px;
+                        color:#fff;
+                        line-height: 22px;
+                   } 
+                   >span{
+                    display: block;
+                    font-size: 12px;
+                    line-height: 40px;
+                     color:#fff;
+                   }
+                }    
+                >.form_box{
+                    ul{
+                            >li{
+                                position: relative;
+                                width: 410px;
+                                &+li{
+                                    margin-top:20px; 
+                                }
+                                >label{
+                                    display: block;
+                                    font-size:16px;
+                                    line-height: 16px;
+                                    margin-bottom: 12px;
+                                    height: 16px;
+                                    font-weight: bold;
+                                    >span{
+                                        font-size: 12px;
+                                    }
+                                }
+                                >input[type='text']{
+                                    border:1px solid #fff;
+                                    height:38px;
+                                    width: 392px;
+                                    padding-left: 16px;
+                                    font-size: 14px;
+                                    line-height: 20px;
+                                    color: #fff;
+                                    background-color: #735e4b;
+                                }
+                                >.error{
+                                    position: absolute;
+                                    bottom:-20px;
+                                    left:0px;
+                                    height:20px;
+                                    line-height: 20px;
+                                    color:#ff0000;
+                                }
+                                >.m_textarea{
+                                    width:373px;
+                                    color:#fff;
+                                    font-size: 14px;
+                                    line-height: 20px;
+                                    padding:10px 19px 0 16px;
+                                    border:1px solid #fff;
+                                    height:173px;
+                                    text-align: justify;
+                                    outline:none;
+                                    background-color: #735e4b;
+                                }
+                            }
+                        }
+                    >.form_box_l{
+                        width: 410px;
+                        height:690px;
+                    }
+                    >.form_box_r{
+                        width:280px;
+                        height: 690px;
+                        li{
+                            width:280px;
+                        }
+                        .m_txt{
+                            width:262px;
+                        }
+                        .li_code{
+                            >input{
+                                width:146px;
+                            }
+                            >a{
+                                img{
+
+                                }
+                            }
+                        }
+                        .li_sumbit_btn{
+                            >a{
+                                display: block;
+                                width: 164px;
+                                text-align:center;
+                                color:#fff;
+                                font-size: 16px;
+                                height:40px;
+                                line-height: 40px;
+                                background-color: #bda86f;
+                            }
+                        }
+                        .form_box_r_b{
+                            margin-top: 52px;
+                            >h2{
+                                font-size: 16px;
+                                font-weight: bold;
+                                line-height: 44px;
+                                height: 44px;
+                            }
+                            >.detail_info{
+                                >p{
+                                    font-size: 14px;
+                                    line-height: 30px;
+                                    height:30px;
+                                    >a{
+                                        display: inline-block;
+                                        color:#fff;
+                                        text-align: center;
+                                        height:30px;
+                                        width: 80px;
+                                        background-color: #bda86f;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }     
+            }
+        }     
     }
+    
 }
 
