@@ -51,7 +51,7 @@ table {
 }
 
 body {
-    font: 12px/150% "Microsoft YaHei", Arial, Helvetica, sans-serif;; /*unitedCode的写法，宋体的写法*/
+    font: 12px/140% "Microsoft YaHei", Arial, Helvetica, sans-serif;; /*unitedCode的写法，宋体的写法*/
     color: #666;
     background: #fff;
 }
@@ -214,8 +214,6 @@ s, i, em {
 .gf_header{
     background-color:#735e49;
     width: 100%;
-    position:fixed;
-    z-index:777;
     >.header_one{
         height:110px;
         >.header_warp{
@@ -356,7 +354,7 @@ s, i, em {
               }
     }    
 }
-.footer{
+ .footer{
     width: 100%;
     min-width: 1200px;
     >.footer_one{
@@ -371,6 +369,7 @@ s, i, em {
                 >h2{
                     font-size: 14px;
                     color:#735e49;
+                    font-weight: bold;
                     line-height: 38px;
                 }
                 >ul{
@@ -381,6 +380,9 @@ s, i, em {
                           color: #fff;
                           height:24px;
                           line-height: 24px;
+                          &:hover{
+                            color:#735e49;
+                          }
                         }
                     }
                 }

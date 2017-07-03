@@ -73,7 +73,7 @@ table {
   border-spacing: 0;
 }
 body {
-  font: 12px/150% "Microsoft YaHei", Arial, Helvetica, sans-serif;
+  font: 12px/140% "Microsoft YaHei", Arial, Helvetica, sans-serif;
   /*unitedCode的写法，宋体的写法*/
   color: #666;
   background: #fff;
@@ -230,8 +230,6 @@ em {
 .gf_header {
   background-color: #735e49;
   width: 100%;
-  position: fixed;
-  z-index: 777;
 }
 .gf_header > .header_one {
   height: 110px;
@@ -367,6 +365,7 @@ em {
 .footer > .footer_one > ul > li > h2 {
   font-size: 14px;
   color: #735e49;
+  font-weight: bold;
   line-height: 38px;
 }
 .footer > .footer_one > ul > li > ul > li > a {
@@ -375,6 +374,9 @@ em {
   color: #fff;
   height: 24px;
   line-height: 24px;
+}
+.footer > .footer_one > ul > li > ul > li > a:hover {
+  color: #735e49;
 }
 .footer > .footer_two {
   height: 48px;
