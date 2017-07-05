@@ -175,6 +175,9 @@ em {
 .mr20 {
   margin-right: 20px;
 }
+.mt20 {
+  margin-top: 20px;
+}
 .mr30 {
   margin-right: 30px;
 }
@@ -230,6 +233,7 @@ em {
 .gf_header {
   background-color: #735e49;
   width: 100%;
+  min-width: 1200px;
 }
 .gf_header > .header_one {
   height: 110px;

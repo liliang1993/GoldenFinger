@@ -74,82 +74,101 @@
   position: relative;
   z-index: 30px;
 }
-.content .ind_content > .w > .m_user_ind {
+.content .ind_content > .w > form > .m_log_box {
+  width: 300px;
+  height: 310px;
+  padding: 25px 26px 9px;
+  background-color: rgba(115, 94, 73, 0.5);
   position: absolute;
   right: 0;
-  top: -380px;
+  top: -402px;
   z-index: 20;
-  width: 265px;
 }
-.content .ind_content > .w > .m_user_ind > .user_core {
-  height: 222px;
-  color: #fff;
-}
-.content .ind_content > .w > .m_user_ind > .user_core > .user_kl {
-  display: block;
-  height: 100px;
-  width: 130px;
-  text-align: center;
-  padding: 15px 0 0;
-}
-.content .ind_content > .w > .m_user_ind > .user_core > .user_kl > svg {
-  color: #fff;
-  width: 100%;
-  font-size: 30px;
-  height: 30px;
-  line-height: 30px;
-}
-.content .ind_content > .w > .m_user_ind > .user_core > .user_kl > em {
-  display: block;
-  font-size: 28px;
-  font-weight: bold;
-  height: 28px;
-  line-height: 28px;
-  margin-top: 8px;
-}
-.content .ind_content > .w > .m_user_ind > .user_core > .user_kl > b {
-  display: inline-block;
-  height: 22px;
-  font-size: 16px;
-  line-height: 22px;
-  /*letter-spacing: 2px;*/
-}
-.content .ind_content > .w > .m_user_ind > .user_core > .user_zh {
-  display: block;
-  height: 37px;
-  width: 114px;
-  margin-top: 5px;
-  line-height: 37px;
-  font-size: 14px;
-  color: #fff;
-  padding-left: 16px;
-}
-.content .ind_content > .w > .m_user_ind > .user_core > .user_zh > .user_ck {
-  display: inline-block;
-  font-size: 18px;
-  line-height: 18px;
-}
-.content .ind_content > .w > .m_user_ind > .user_core > .user_zh > .user_qk {
-  display: inline-block;
-  font-size: 23px;
+.content .ind_content > .w > form > .m_log_box > ul > li {
   position: relative;
-  top: 3px;
+  width: 100%;
+  float: left;
 }
-.content .ind_content > .w > .m_user_ind > .user_core > .user_ct {
-  display: block;
-  height: 60px;
-  width: 265px;
-  margin-top: 5px;
-  background-color: #fff;
-  font-size: 16px;
-  line-height: 60px;
+.content .ind_content > .w > form > .m_log_box > ul > li input::-webkit-input-placeholder {
+  color: #e4d7b1;
+  font-size: 14px;
+}
+.content .ind_content > .w > form > .m_log_box > ul > li input:-moz-placeholder {
+  color: #e4d7b1;
+  font-size: 14px;
+}
+.content .ind_content > .w > form > .m_log_box > ul > li input::-moz-placeholder {
+  color: #e4d7b1;
+  font-size: 14px;
+}
+.content .ind_content > .w > form > .m_log_box > ul > li input:-ms-input-placeholder {
+  color: #e4d7b1;
+  font-size: 14px;
+}
+.content .ind_content > .w > form > .m_log_box > ul > li.li_inp > label {
+  width: 44px;
+  height: 30px;
+  position: absolute;
+  left: 14px;
+  top: 10px;
+  border-right: 1px solid #ccc;
   text-align: center;
+  display: block;
 }
-.content .ind_content > .w > .m_user_ind > .user_core > .user_ct > svg {
+.content .ind_content > .w > form > .m_log_box > ul > li.li_inp > label > svg {
   display: inline-block;
+  color: #bca86f;
   font-size: 22px;
-  line-height: 22px;
-  margin-right: 3px;
+  line-height: 30px;
+  height: 30px;
+}
+.content .ind_content > .w > form > .m_log_box > ul > li.li_inp > .m_txt {
+  color: #bca86f;
+  font-size: 14px;
+  width: 214px;
+  height: 50px;
+  padding-left: 86px;
+  line-height: 50px;
+  border: 0;
+  background: #fff;
+  margin-bottom: 25px;
+}
+.content .ind_content > .w > form > .m_log_box > ul > li.li_eam > .m_txt {
+  height: 50px;
+  width: 169px;
+  padding-left: 15px;
+  color: #bca86f;
+  font-size: 14px;
+  margin-bottom: 25px;
+}
+.content .ind_content > .w > form > .m_log_box > ul > li > .error {
+  position: absolute;
+  left: 0px;
+  top: 50px;
+  line-height: 25px;
+  font-size: 12px;
+  color: red;
+  width: 100%;
+}
+.content .ind_content > .w > form > .m_log_box > ul > li.li_p_btn {
+  width: 100%;
+  height: 50px;
+}
+.content .ind_content > .w > form > .m_log_box > ul > li.li_p_btn > .m_frm_usebtn {
+  width: 280px;
+  border: 0;
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 50px;
+  font-size: 14px;
+  line-height: 50px;
+  text-align: center;
+  color: #fff;
+}
+.content .ind_content > .w > form > .m_log_box > .frm_tip {
+  height: 36;
+  line-height: 36px;
 }
 .content .ind_content > .w > .m_pt_box {
   height: 164px;
