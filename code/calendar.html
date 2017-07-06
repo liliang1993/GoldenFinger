@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>Calendar</title>
     <link rel="stylesheet"  type="text/less" href=./less/public.less>
-  <link rel="stylesheet"  type="text/less" href=./less/calendar.less>
+  <link rel="stylesheet"  type="text/less" href=./less/calendar2.less>
   <script src='./lib/less.js'></script>
 </head>
 <body>
@@ -29,7 +29,15 @@
                     <!-- left start -->
                     <div class="calSlider fl">
                         <a id="btn_wl_prev" href="javascript:;" class="calLR calPrev jbColorHover">&lt;</a>
-                        <ul id="weekListUl" class="weekListv clearfix sxscreenUL"></ul>
+                        <ul id="weekListUl" class="weekListv fix sxscreenUL">
+                           <li v="2017-07-03"><a href="javascript:void(0);" class="wek_item"><span class="dateSpan">2017-07-03</span>周一</a></li>
+                           <li v="2017-07-04"><a href="javascript:void(0);" class="wek_item"><span class="dateSpan">2017-07-04</span>周二</a></li>
+                           <li v="2017-07-05"><a href="javascript:void(0);" class="wek_item"><span class="dateSpan">2017-07-05</span>周三</a></li>
+                           <li v="2017-07-06" class="active"><a href="javascript:void(0);" class="wek_item"><span class="dateSpan">2017-07-06</span>周四</a></li>
+                           <li v="2017-07-07"><a href="javascript:void(0);" class="wek_item"><span class="dateSpan">2017-07-07</span>周五</a></li>
+                           <li v="2017-07-08"><a href="javascript:void(0);" class="wek_item"><span class="dateSpan">2017-07-08</span>周六</a></li>
+                           <li v="2017-07-09"><a href="javascript:void(0);" class="wek_item"><span class="dateSpan">2017-07-09</span>周日</a></li>
+                          </ul>
                         <a id="btn_wl_next" href="javascript:;" class="calLR calNext jbColorHover">&gt;</a>
                     </div>
                     <!-- left end   -->
@@ -167,8 +175,8 @@
                         <div class="sctab3">
                         <span class="iconCountry KOR"></span>
                         </div>
-                        <div class="tblibox l">
-                        <div class="fix rel">
+                        <div class="tblibox fl">
+                        <div class="clearfix pr">
                         <div class="sctab4">
                         <p id="titles_9882" class="ell">6月外汇储备(亿美元)</p>
                         </div>
@@ -178,12 +186,12 @@
                         <div v="9882" class="sctab8 sctLast">
                         <span class="calendericon i_qsBox on"></span>
                         </div>
-                        <div id="div_9882" class="sctDia tab_comes" style="display: block;">
-                        <div class="pl20 pt45 pr20 pb20 tj">
-                        <p id="content_9882" class="f12 sctdP"></p>
+                        <div id="div_9882" class="sctDia tab_comes" style="display:block;">
+                        <div class="sctDia_c">
+                        <p id="content_9882" class="sctdP"></p>
                         <div class="tabSilderLis mt20">
                         <div class="tit_div tabTKhd">
-                         <ul name="ul_tabs" class="fix tab-box">
+                         <ul name="ul_tabs" class="clearfix tab-box">
                           <li t="tb" class="current"><a href="javascript:void(0);">指标图表</a></li>
                           <li t="ls"><a href="javascript:void(0);">历史数据</a></li>
                          </ul>

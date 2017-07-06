@@ -1,0 +1,633 @@
+/* star start */
+.starV {
+  width: 46px;
+  height: 13px;
+  display: inline-block;
+  vertical-align: middle;
+}
+.star_0 {
+  background-position: 0 0px;
+}
+.star_1 {
+  background-position: 0 -15px;
+}
+.star_2 {
+  background-position: 0 -33px;
+}
+.star_3 {
+  background-position: 0 -51px;
+}
+/* star start */
+/* 璐㈢粡鏃ュ巻 start */
+.calendericon {
+  background-image: url(../images/Calendar/calender.png);
+  background-repeat: no-repeat;
+}
+.calSlider {
+  width: 616px;
+  padding: 1px 30px;
+  height: 42px;
+  position: relative;
+  border-radius: 2px;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  background: #d1ab72;
+}
+.calLR {
+  width: 30px;
+  height: 44px;
+  text-align: center;
+  line-height: 44px;
+  font-size: 30px;
+  font-weight: bold;
+  font-family: "宋体";
+  display: block;
+  position: absolute;
+  top: 0;
+  z-index: 6;
+  color: #fff;
+  border-radius: 2px;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+}
+.calPrev,
+.vidSlider .prev {
+  left: 0;
+}
+.calNext,
+.vidSlider .next {
+  right: 0;
+}
+.calLR:hover,
+calNext:hover {
+  color: #fff;
+}
+#weekListUl {
+  width: 616px;
+  height: 28px;
+  padding: 7px 0;
+  background: #fff;
+  position: relative;
+  overflow: hidden;
+}
+#weekListUl li {
+  width: 88px;
+  float: left;
+  margin-left: -1px;
+  border-left: 1px solid #f2f2f2;
+  position: relative;
+  overflow: hidden;
+}
+#weekListUl li a {
+  display: block;
+  width: 36px;
+  height: 28px;
+  line-height: 28px;
+  text-align: center;
+  font-size: 14px;
+  color: #252525;
+  padding-left: 37px;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+}
+#weekListUl li.active,
+#weekListUl li:hover {
+  background: #f5f5f5;
+  height: 42px;
+  line-height: 42px;
+  margin-top: -7px;
+}
+#weekListUl li.active a,
+#weekListUl li:hover a {
+  margin-top: 7px;
+  color: #d1ab72;
+}
+#weekListUl li a .dateSpan {
+  width: 82px;
+  height: 28px;
+  display: inline-block;
+  text-align: right;
+  position: absolute;
+  left: -43px;
+  top: 0;
+}
+.calLis {
+  width: 130px;
+  height: 42px;
+  padding: 1px;
+  position: relative;
+  background: #d1ab72;
+}
+.calendarInput {
+  width: 98px;
+  height: 42px;
+  text-align: center;
+  color: #000;
+  font-family: Arial;
+  font-size: 14px;
+  padding: 0;
+  line-height: 42px;
+  background: #fff;
+  padding-right: 32px;
+  border: 0;
+  cursor: pointer;
+}
+.calLis i {
+  right: 9px;
+  top: 11px;
+  cursor: pointer;
+}
+.screenBox .lisTit,
+.warpBot .lisTit {
+  border-bottom: 2px solid #d1ab72;
+  padding-bottom: 10px;
+}
+/* 璐㈢粡鏃ュ巻 end   */
+/* 绛涢€� start */
+.iconCountry {
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+  background-image: url(../images/Calendar/country.png);
+  background-repeat: no-repeat;
+}
+.coutrySX {
+  width: 730px;
+}
+.sxBox {
+  border-bottom: 1px solid #ededed;
+}
+.coutrySX li {
+  width: 70px;
+  height: 48px;
+  padding-bottom: 2px;
+  background: #fff;
+  float: left;
+}
+.coutrySX li a {
+  width: 32px;
+  height: 28px;
+  display: block;
+  line-height: 28px;
+  padding: 10px 0 10px 38px;
+  background: #fff;
+  font-family: Arial;
+  color: #252525;
+  position: relative;
+}
+.coutrySX li.active a,
+.coutrySX li:hover a {
+  background: #f5f5f5;
+}
+.coutrySX li.active,
+.coutrySX li:hover {
+  background: #d1ab72;
+}
+.coutrySX li.allCountry {
+  width: 60px;
+  height: 28px;
+  padding: 0;
+  margin-top: 10px;
+  background: #e4e4e4;
+  margin-right: 5px;
+}
+.coutrySX li.allCountry a {
+  width: 58px;
+  height: 26px;
+  padding: 0;
+  margin: 1px;
+  text-align: center;
+  line-height: 26px;
+  color: #a5a5a5;
+}
+.coutrySX li.allCountry.active a,
+.coutrySX li.allCountry:hover a {
+  background: #fff;
+  color: #ee406b;
+}
+.coutrySX li a i {
+  width: 22px;
+  height: 22px;
+  display: block;
+  position: absolute;
+  left: 10px;
+  top: 14px;
+}
+.coutrySX li a .EUR {
+  background-position: -18px -154px;
+}
+.coutrySX li a .CNY {
+  background-position: -18px 0;
+}
+.coutrySX li a .USD {
+  background-position: -18px -132px;
+}
+.coutrySX li a .GBP {
+  background-position: -18px -198px;
+}
+.coutrySX li a .JPY {
+  background-position: -18px -22px;
+}
+.coutrySX li a .AUD {
+  background-position: -18px -176px;
+}
+.coutrySX li a .NZD {
+  background-position: -18px -242px;
+}
+.coutrySX li a .CHF {
+  background-position: -18px -330px;
+}
+.coutrySX li a .CAD {
+  background-position: -18px -110px;
+}
+.coutrySX li a .KOR {
+  background-position: -18px -88px;
+}
+.coutrySX li a .HK {
+  background-position: -18px -286px;
+}
+.coutrySX li a .ITA {
+  background-position: -18px -220px;
+}
+.coutrySX li a .FR {
+  background-position: -18px -66px;
+}
+.coutrySX li a .GER {
+  background-position: -18px -44px;
+}
+.coutrySX li a .CH {
+  background-position: -18px -330px;
+}
+.coutrySX li a .TW {
+  background-position: -18px -308px;
+}
+.EUR {
+  background-position: 0 -112px;
+}
+.KOR {
+  background-position: 0 -64px;
+}
+.JPY {
+  background-position: 0 -16px;
+}
+.AUD {
+  background-position: 0 -128px;
+}
+.CNY {
+  background-position: 0 0;
+}
+.GBP {
+  background-position: 0 -144px;
+}
+.CHF {
+  background-position: 0 -240px;
+}
+.HK {
+  background-position: 0 -208px;
+}
+.ITA {
+  background-position: 0 -160px;
+}
+.FR {
+  background-position: 0 -48px;
+}
+.GER {
+  background-position: 0 -32px;
+}
+.USD {
+  background-position: 0 -96px;
+}
+.CAD {
+  background-position: 0 -80px;
+}
+.CH {
+  background-position: 0 -240px;
+}
+.TW {
+  background-position: 0 -224px;
+}
+.sxMore {
+  width: 80px;
+  height: 28px;
+  line-height: 28px;
+  display: block;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  z-index: 2;
+  border: 0;
+  background: #d1ab72;
+  color: #fff;
+  text-align: center;
+  border-radius: 4px;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+}
+.sxMore:hover,
+.sxok:hover {
+  color: #fff;
+}
+.delSXWarp {
+  margin-bottom: 14px;
+  line-height: 28px;
+  font-size: 14px;
+}
+.delSXL {
+  width: 95px;
+  float: left;
+  text-align: right;
+}
+.delSXR {
+  width: 710px;
+  float: right;
+}
+.serInp {
+  width: 150px;
+  height: 26px;
+  border: 1px solid #e4e4e4;
+  padding: 0 0 0 10px;
+  border-right: 0;
+  line-height: 26px;
+  color: #a5a5a5;
+}
+.serSX {
+  width: 28px;
+  height: 28px;
+  line-height: 28px;
+  display: block;
+  position: relative;
+  border: 0;
+  background: #d1ab72;
+}
+.i_serch {
+  width: 20px;
+  height: 20px;
+  display: block;
+  margin: 4px auto;
+  background-position: -30px -65px;
+}
+input {
+  transition: all 0.3s ease-out 0s;
+}
+input:focus {
+  border-color: #ee406b;
+}
+.delSX {
+  display: none;
+  border: 1px solid #ededed;
+  border-top: 0;
+}
+.delSXLis li {
+  width: 58px;
+  height: 26px;
+  padding: 1px;
+  float: left;
+  margin-right: 9px;
+  background: #e4e4e4;
+  margin-bottom: 9px;
+  position: relative;
+}
+.delSXLis li a {
+  width: 58px;
+  height: 26px;
+  display: block;
+  text-align: center;
+  line-height: 26px;
+  background: #fff;
+  color: #a5a5a5;
+  font-size: 14px;
+}
+.delSXLis li.active a,
+.delSXLis li:hover a,
+.lis_nav li a:hover,
+.cmList li.current .cmH,
+.cmList li:hover .cmH {
+  color: #d1ab72;
+}
+.delSXCheck li {
+  width: 85px;
+  margin: 7px 0 8px;
+  float: left;
+}
+.delSXLis li.active,
+.delSXLis li:hover {
+  background: #d1ab72;
+}
+.delSXCheck li a {
+  padding-left: 17px;
+  height: 13px;
+  display: block;
+  width: 68px;
+  position: relative;
+  line-height: 11px;
+}
+.delSXCheck li a .i_check {
+  width: 12px;
+  height: 12px;
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 1px;
+  background-position: -17px -67px;
+}
+.delSXCheck li a.checked .i_check {
+  background-position: 0px -67px;
+}
+.sxok {
+  width: 80px;
+  display: block;
+  height: 28px;
+  line-height: 28px;
+  border: 0;
+  position: relative;
+  background: #d1ab72;
+  text-align: center;
+  color: #fff;
+}
+.sxqx {
+  border: 1px solid #e4e4e4;
+  color: #a5a5a5;
+  width: 78px;
+  height: 26px;
+  display: block;
+  line-height: 26px;
+  position: relative;
+  text-align: center;
+}
+.calTabScreen li.calLiv {
+  border-top: 1px solid #e4e4e4;
+  padding: 16px 0;
+  margin-top: -1px;
+  line-height: 24px;
+  text-align: center;
+  width: 100%;
+  float: left;
+  font-size: 14px;
+  color: #252525;
+  position: relative;
+}
+.sctab1,
+.sctab3 {
+  width: 100px;
+  float: left;
+}
+.sctab2,
+.sctab6,
+.sctab7 {
+  width: 150px;
+  float: left;
+}
+.sctab4 {
+  width: 300px;
+  float: left;
+}
+.sctab5 {
+  width: 100px;
+  float: left;
+}
+.sctab8 {
+  width: 50px;
+  float: left;
+}
+.sctab2 .starV,
+.sctab3 .iconCountry {
+  margin-top: 4px;
+}
+.calTabScreen li.calLiv.liBD {
+  border: 0;
+  background: #f5f5f5;
+  padding: 0;
+  height: 34px;
+  line-height: 34px;
+  position: relative;
+  z-index: 2;
+}
+.i_qsBox {
+  width: 14px;
+  height: 14px;
+  display: inline-block;
+  background-position: 0px -86px;
+  cursor: pointer;
+}
+.i_qsBox:hover,
+.i_qsBox.on {
+  background-position: -19px -86px;
+}
+/* 绛涢€� end   */
+/* 寮规 start */
+.sctDia {
+  width: 738px;
+  height: 500px;
+  padding: 0px 50px 15px;
+  background: url(../images/Calendar/tkbg.png) no-repeat center center;
+  position: absolute;
+  right: -50px;
+  top: 15px;
+  z-index: 10;
+  color: #252525;
+  text-align: left;
+  display: none;
+}
+.tabTKhd li {
+  width: 76px;
+  height: 24px;
+  padding: 1px;
+  background: #e4e4e4;
+  float: left;
+  margin-right: 12px;
+  border-radius: 4px;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+}
+.tabTKhd li.current {
+  background: #d1ab72;
+}
+.tabTKhd li a {
+  display: block;
+  width: 76px;
+  height: 24px;
+  background: #fff;
+  color: #252525;
+  font-size: 14px;
+  text-align: center;
+  line-height: 24px;
+  border-radius: 4px;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+}
+.tbWarp {
+  width: 100%;
+  height: 280px;
+  position: relative;
+  overflow: hidden;
+}
+.tbDC {
+  position: absolute;
+  right: 180px;
+  top: 0;
+  font-size: 12px;
+}
+.tbDC a {
+  color: #252525;
+}
+.sctdP {
+  height: 85px;
+  position: relative;
+  overflow: hidden;
+}
+.btemhd {
+  height: 30px;
+  line-height: 30px;
+  background: #f8f8f8;
+  font-size: 14px;
+}
+.btemUl {
+  margin-top: 10px;
+  height: 200px;
+  position: relative;
+  overflow-x: auto;
+}
+.btemUl li {
+  border-bottom: 1px solid #e4e4e4;
+  height: 27px;
+  line-height: 27px;
+  font-family: Arial;
+  width: 100%;
+  float: left;
+}
+/* 寮规 end   */
+.warpBot {
+  width: 405px;
+  height: 360px;
+  background: #fff;
+  position: relative;
+  overflow: hidden;
+}
+.warpbUl {
+  height: 340px;
+  margin-top: 10px;
+  position: relative;
+  overflow: auto;
+}
+.warpbUl li {
+  padding: 8px 0 10px;
+  border-top: 1px solid #e4e4e4;
+  font-size: 14px;
+  line-height: 24px;
+  margin-top: -1px;
+}
+.warpbUl li h5 {
+  color: #a5a5a5;
+  font-size: 14px;
+  padding: 2px 0;
+  font-weight: normal;
+}
+.warpPcon {
+  max-height: 75px;
+  position: relative;
+  overflow: hidden;
+}
+.warRu {
+  height: 305px;
+}

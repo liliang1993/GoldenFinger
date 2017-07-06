@@ -62,11 +62,15 @@
   background-position: 0px -86px;
   cursor: pointer;
 }
+.i_qsBox:hover,
+.i_qsBox.on {
+  background-position: -19px -86px;
+}
 .sctDia {
   width: 738px;
   height: 500px;
   padding: 0px 50px 15px;
-  background: url(/images/PicoWeb/tkbg.png) no-repeat center center;
+  background: url(../images/Calendar/tkbg.png) no-repeat center center;
   position: absolute;
   right: -50px;
   top: 15px;
@@ -75,10 +79,15 @@
   text-align: left;
   display: none;
 }
+.sctDia > .sctDia_c {
+  padding: 0 20px 20px;
+  text-align: justify;
+}
 .sctdP {
   height: 85px;
   position: relative;
   overflow: hidden;
+  font-size: 12px;
 }
 .tabTKhd li {
   width: 76px;
@@ -235,6 +244,18 @@
   border-left: 1px solid #f2f2f2;
   position: relative;
   overflow: hidden;
+}
+.m_main_l > .m_main_v > .calBox .calSlider > #weekListUl > li:active,
+.m_main_l > .m_main_v > .calBox .calSlider > #weekListUl > li:hover {
+  background: #f5f5f5;
+  height: 42px;
+  line-height: 42px;
+  margin-top: -7px;
+}
+.m_main_l > .m_main_v > .calBox .calSlider > #weekListUl > li:active a,
+.m_main_l > .m_main_v > .calBox .calSlider > #weekListUl > li:hover a {
+  margin-top: 7px;
+  color: #d1ab72;
 }
 .m_main_l > .m_main_v > .calBox .calSlider > #weekListUl > li > a {
   display: block;
